@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Movies>
+  <Movie>
+    <Title>Shrek</Title>
+    <Director>Andrew Adamson</Director>
+    <Genre>0</Genre>
+    <ReleaseDate>5/16/2001</ReleaseDate>
+    <RunTime>89</RunTime>
+  </Movie>
+  <Movie>
+    <Title>Fletch</Title>
+    <Director>Michael Ritchie</Director>
+    <Genre>0</Genre>
+    <ReleaseDate>5/31/1985</ReleaseDate>
+    <RunTime>96</RunTime>
+  </Movie>
+  <Movie>
+    <Title>Casablanca</Title>
+    <Director>Michael Curtiz</Director>
+    <Genre>1</Genre>
+    <ReleaseDate>1/1/1942</ReleaseDate>
+    <RunTime>102</RunTime>
+  </Movie>
+</Movies>

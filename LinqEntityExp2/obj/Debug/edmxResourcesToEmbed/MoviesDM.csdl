@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MoviesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Genre">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="Title" />
+    </Key>
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Director" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Genre" Type="Int32" />
+    <Property Name="Runtime" Type="Int32" />
+    <Property Name="ReleaseDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="MoviesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Genre" EntityType="Self.Genre" />
+    <EntitySet Name="Movie" EntityType="Self.Movie" />
+  </EntityContainer>
+</Schema>

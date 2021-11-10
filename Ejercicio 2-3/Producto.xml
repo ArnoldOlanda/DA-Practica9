@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Productos>
+  <Producto>
+    <id>1</id>
+    <descripcion>Mascarillas</descripcion>
+    <precio>40</precio>
+  </Producto>
+  <Producto>
+    <id>2</id>
+    <descripcion>Pastillas</descripcion>
+    <precio>120</precio>
+  </Producto>
+  <Producto>
+    <id>3</id>
+    <descripcion>Jarabe</descripcion>
+    <precio>30</precio>
+  </Producto>
+  <Producto>
+    <id>4</id>
+    <descripcion>Inyectable</descripcion>
+    <precio>12</precio>
+  </Producto>
+  <Producto>
+    <id>5</id>
+    <descripcion>Gotas</descripcion>
+    <precio>4</precio>
+  </Producto>
+</Productos>

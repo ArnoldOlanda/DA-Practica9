@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FarmaciaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista '4F768B2EC5C2A81DE3FBAF3C984A1939_E\DESARROLLO APP\PRACTICAS\PRACTICA 09\EJERCICIOS\EJERCICIO 4\EJERCICIO 4\APP_DATA\FARMACIA.MDF.dbo.producto' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="producto">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="descripcion" />
+      <PropertyRef Name="precio" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="precio" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista '4F768B2EC5C2A81DE3FBAF3C984A1939_E\DESARROLLO APP\PRACTICAS\PRACTICA 09\EJERCICIOS\EJERCICIO 4\EJERCICIO 4\APP_DATA\FARMACIA.MDF.dbo.ventas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="ventas">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="fecha" />
+      <PropertyRef Name="idProd" />
+      <PropertyRef Name="cantidad" />
+      <PropertyRef Name="total" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="idProd" Type="int" Nullable="false" />
+    <Property Name="cantidad" Type="int" Nullable="false" />
+    <Property Name="total" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="FarmaciaModelStoreContainer">
+    <EntitySet Name="producto" EntityType="Self.producto" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [producto].[id] AS [id], 
+    [producto].[descripcion] AS [descripcion], 
+    [producto].[precio] AS [precio]
+    FROM [dbo].[producto] AS [producto]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ventas" EntityType="Self.ventas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ventas].[id] AS [id], 
+    [ventas].[fecha] AS [fecha], 
+    [ventas].[idProd] AS [idProd], 
+    [ventas].[cantidad] AS [cantidad], 
+    [ventas].[total] AS [total]
+    FROM [dbo].[ventas] AS [ventas]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Ventas>
+  <Venta>
+    <id>1</id>
+    <fecha>15/05/2021</fecha>
+    <idProd>3</idProd>
+  </Venta>
+  <Venta>
+    <id>2</id>
+    <fecha>20/01/2020</fecha>
+    <idProd>1</idProd>
+  </Venta>
+  <Venta>
+    <id>3</id>
+    <fecha>01/10/2021</fecha>
+    <idProd>2</idProd>
+  </Venta>
+  <Venta>
+    <id>4</id>
+    <fecha>24/09/2021</fecha>
+    <idProd>5</idProd>
+  </Venta>
+</Ventas>

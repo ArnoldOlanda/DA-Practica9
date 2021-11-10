@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Genres>
+  <Genre>
+    <ID>0</ID>
+    <Name>Comedy</Name>
+  </Genre>
+  <Genre>
+    <ID>1</ID>
+    <Name>Drama</Name>
+  </Genre>
+  <Genre>
+    <ID>2</ID>
+    <Name>Action</Name>
+  </Genre>
+</Genres>
